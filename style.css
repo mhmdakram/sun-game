@@ -51,7 +51,8 @@ header{
     height: 300px;
     width:250px;
    margin-top: 100px;
-   margin-left: 500px;
+   margin-left: auto;
+   margin-right: auto;
 }
 
 .ellipse{
@@ -70,10 +71,16 @@ top: 25px;
 position:absolute;
 height: 35px;
 width: 35px;
-top: 20px;
-left: 155px;
+/* top: 10px; */
+
+/* left: 110px; */
+/* left: 60px; */
+top: 132.5px;
+left: 107.5px;
 
 
+
+animation: moveLeft 3s 1 linear;
 
 }
 
@@ -81,12 +88,14 @@ left: 155px;
 .light{
     /* Vector 2 */
 position: absolute;
-width: 75px;
+width: 80px;
 height: 80px;
-top: 40px;
-left: 110px;
+top: 110px;
+left: 85px;
 
+transform: translateX(30px) translateY(-65px);
 
+animation: moveLeftLight 3s 1 linear;
 
 }
 
@@ -95,7 +104,7 @@ left: 110px;
    position: absolute;
 width: 100px;
 height: 100px;
-top: 90px;
+top: 100px;
 left: 75px;
 
 
@@ -111,7 +120,7 @@ p.description{
      but dont take it home cause sun is home-sick! */
 
 position: relative;
-width: 500px;
+width: fit-content;
 height: auto;
 
 margin-top: 10px;
@@ -123,7 +132,8 @@ line-height: 20px;
 text-align: center;
 margin-bottom: 25px;
 color: #8E8E8E;
-margin-left: 375px;
+margin-left: auto;
+margin-right: auto;
 
 }
 
@@ -148,7 +158,7 @@ line-height: 20px;
 text-align: center;
 color: #FFFFFF;
 
-margin-left: 375px;
+
 
 
 
@@ -176,15 +186,50 @@ text-align: center;
 color: #FFFFFF;
 
 
+}
 
-
-
+.btn{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: fit-content;
+    
 }
 
 @media screen and (max-width: 480px) {
     .question{
         display: none;
     }
+
+    .btn{
+        max-width: min-content;
+    }
   }
 
+ @keyframes moveLeft {
+    0%{
+        transform: rotate(180deg) translateX(160px) rotate(180deg);
+    }
+
+    
+
+    100%{
+        transform: rotate(0deg) translateX(160px) rotate(0deg);
+    }
+
+    
+ }
+
+ @keyframes moveLeftLight {
+    0%{
+        transform:  translateX(60px) translateY(-110px);
+    }
+
+    
+
+    100%{
+        transform: translateX(-60px) translateY(-110px);
+    }
+
+}
 
