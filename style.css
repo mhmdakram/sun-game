@@ -77,9 +77,10 @@ header {
     /* left: 60px; */
     top: 132.5px;
     left: 107.5px;
-
+    transform: translateX(0px) translateY(-125px);
     animation: moveLeft 3s 1 linear;
 
+    animation: moveRight 3s 1 linear;
 
 
 }
@@ -93,9 +94,10 @@ header {
     top: 110px;
     left: 85px;
 
-    transform: translateX(30px) translateY(-65px);
+    transform: translateX(-5px) translateY(-75px) rotate(-25deg);
     animation: moveLeftLight 3s 1 linear;
 
+    animation: moveRightLight 3s 1 linear;
 
 }
 
@@ -211,30 +213,80 @@ button.rightbtn {
     }
 }
 
+/* Animation Left start*/ 
 
-@keyframes moveLeft {
-    0% {
-        transform: rotate(0deg) translateX(75px) translateY(-105px);
+
+.aniLeft{
+    @keyframes moveLeft {
+        0% {
+            transform: rotate(0deg) translateY(-125px) rotate(0deg);
+        }
+    
+    
+    
+        100% {
+            transform: rotate(-60deg) translateY(-105px) rotate(-90deg);
+        }
+    
+    
     }
-
-
-
-    100% {
-        transform: rotate(-180deg) translateX(75px);
-    }
-
-
 }
 
-@keyframes moveLeftLight {
-    0% {
-        transform: translateX(60px) translateY(-110px);
+
+
+.aniLeftLight{
+    @keyframes moveLeftLight {
+        0% {
+            transform: rotate(0deg) translateX(-5px) translateY(-75px) rotate(-25deg);
+        }
+    
+    
+    
+        100% {
+            transform: rotate(-50deg) translateX(-10px) translateY(-50px) rotate(-50deg);
+        }
+    
     }
-
-
-
-    100% {
-        transform: translateX(-60px) translateY(-110px);
-    }
-
+    
 }
+
+
+/* Animation Left end */
+
+/* Animation Right start */
+
+.aniRight{
+    @keyframes moveRight {
+        0% {
+            transform: rotate(0deg) translateY(-125px) rotate(0deg);
+        }
+    
+    
+    
+        100% {
+            transform: rotate(60deg) translateY(-105px) rotate(90deg);
+        }
+    
+    
+    }
+}
+
+
+.aniRightLight{
+    @keyframes moveRightLight {
+        0% {
+            transform: rotate(0deg) translateX(-5px) translateY(-75px) rotate(-25deg);
+        }
+    
+    
+    
+        100% {
+            transform: rotate(15deg) translateX(20px) translateY(-50px) rotate(40deg);
+        }
+    
+    }
+}
+
+
+
+/* Animation Right end */
