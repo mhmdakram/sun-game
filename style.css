@@ -8,155 +8,160 @@
     src: url(fonts/OpenSans-VariableFont_wdth\,wght.ttf);
 }
 
-h1.heading{
+h1.heading {
     /* We Love the Sun as much as Earth! */
 
-position: relative;
-width: 289px;
-height: 48px;
-left: 50px;
-top: 40px;
+    position: relative;
+    width: 289px;
+    height: 48px;
+    left: 50px;
+    top: 40px;
 
-float: left;
+    float: left;
 
-font-family: 'Krona One';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 117.68%;
-/* or 24px */
+    font-family: 'Krona One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 117.68%;
+    /* or 24px */
 
-color: #000000;
+    color: #000000;
 }
 
-img.question{
+img.question {
     /* question 1 */
 
-position: relative;
-width: 44px;
-height: 44px;
-right: 50px;
-top: 37px;
+    position: relative;
+    width: 44px;
+    height: 44px;
+    right: 50px;
+    top: 37px;
 
-float: right;
+    float: right;
 
 }
 
-header{
+header {
     background-color: white;
 }
 
-.main{
-    position:relative;
+.main {
+    position: relative;
     height: 300px;
-    width:250px;
-   margin-top: 100px;
-   margin-left: auto;
-   margin-right: auto;
+    width: 250px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.ellipse{
+.ellipse {
     /* Ellipse 1 */
-position: absolute;
-width: 200px;
-height: 60px;
-left: 25px;
-top: 25px;
+    position: absolute;
+    width: 200px;
+    height: 60px;
+    left: 25px;
+    top: 25px;
 
 
 }
 
-.sun{
+.sun {
     /* Group 7 */
-position:absolute;
-height: 35px;
-width: 35px;
-/* top: 10px; */
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    /* top: 10px; */
 
-/* left: 110px; */
-/* left: 60px; */
-top: 132.5px;
-left: 107.5px;
+    /* left: 110px; */
+    /* left: 60px; */
+    top: 132.5px;
+    left: 107.5px;
+
+    animation: moveLeft 3s 1 linear;
 
 
-
-animation: moveLeft 3s 1 linear;
 
 }
 
 
-.light{
+.light {
     /* Vector 2 */
-position: absolute;
-width: 80px;
-height: 80px;
-top: 110px;
-left: 85px;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 110px;
+    left: 85px;
 
-transform: translateX(30px) translateY(-65px);
-
-animation: moveLeftLight 3s 1 linear;
-
-}
-
-.earth{
-   /* image 1 */
-   position: absolute;
-width: 100px;
-height: 100px;
-top: 100px;
-left: 75px;
-
-
-
+    transform: translateX(30px) translateY(-65px);
+    animation: moveLeftLight 3s 1 linear;
 
 
 }
 
 
 
-p.description{
+
+
+
+.earth {
+    /* image 1 */
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 100px;
+    left: 75px;
+
+
+
+
+
+}
+
+
+
+p.description {
     /* Click the buttons to play with the sun. take it left or take it right
      but dont take it home cause sun is home-sick! */
 
-position: relative;
-width: fit-content;
-height: auto;
+    position: relative;
+    width: fit-content;
+    height: auto;
 
-margin-top: 10px;
-font-family: 'Open Sans';
-font-style: normal;
-font-weight: 600;
-font-size: 15px;
-line-height: 20px;
-text-align: center;
-margin-bottom: 25px;
-color: #8E8E8E;
-margin-left: auto;
-margin-right: auto;
+    margin-top: 10px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #8E8E8E;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
 
 
-button.leftbtn{
+button.leftbtn {
     /* Group 1 */
 
-position: relative;
-width: 251px;
-height: 53px;
+    position: relative;
+    width: 251px;
+    height: 53px;
 
 
-background: #2E3A59;
-border-radius: 33px;
+    background: #2E3A59;
+    border-radius: 33px;
 
-font-family: 'Krona One';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 20px;
-text-align: center;
-color: #FFFFFF;
+    font-family: 'Krona One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
 
 
 
@@ -167,69 +172,69 @@ color: #FFFFFF;
 
 }
 
-button.rightbtn{
+button.rightbtn {
     /* Group 2 */
 
-position: relative;
-width: 251px;
-height: 53px;
+    position: relative;
+    width: 251px;
+    height: 53px;
 
 
-background: #2E3A59;
-border-radius: 33px;
-font-family: 'Krona One';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 20px;
-text-align: center;
-color: #FFFFFF;
+    background: #2E3A59;
+    border-radius: 33px;
+    font-family: 'Krona One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
 
 
 }
 
-.btn{
+.btn {
     position: relative;
     margin-left: auto;
     margin-right: auto;
     max-width: fit-content;
-    
+
 }
 
 @media screen and (max-width: 480px) {
-    .question{
+    .question {
         display: none;
     }
 
-    .btn{
+    .btn {
         max-width: min-content;
     }
-  }
+}
 
- @keyframes moveLeft {
-    0%{
-        transform: rotate(180deg) translateX(160px) rotate(180deg);
+
+@keyframes moveLeft {
+    0% {
+        transform: rotate(0deg) translateX(75px) translateY(-105px);
     }
 
-    
 
-    100%{
-        transform: rotate(0deg) translateX(160px) rotate(0deg);
+
+    100% {
+        transform: rotate(-180deg) translateX(75px);
     }
 
-    
- }
 
- @keyframes moveLeftLight {
-    0%{
-        transform:  translateX(60px) translateY(-110px);
+}
+
+@keyframes moveLeftLight {
+    0% {
+        transform: translateX(60px) translateY(-110px);
     }
 
-    
 
-    100%{
+
+    100% {
         transform: translateX(-60px) translateY(-110px);
     }
 
 }
-
