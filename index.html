@@ -7,7 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
   <link rel="import" href="component.html" />
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="script.js"></script>
   <title>Sun Game</title>
 </head>
 
@@ -39,14 +40,16 @@
   </div>
 
   <div class="btn">
-    <button class="leftbtn" id="aniLeft" value="click">LEFT</button>
-    <button class="rightbtn" id="aniRight" value="click">RIGHT</button>
+    <!-- <button class="leftbtn" id="aniLeft" value="click">LEFT</button> -->
+
+    <input type="button" value="LEFT" class="leftbtn" id="aniLeft">
+    <!-- <button class="rightbtn" id="aniRight" value="click">RIGHT</button> -->
+
+    <input type="button" value="RIGHT" class="rightbtn" id="aniRight">
   </div>
 
 
-  <script src="script.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-  </script>
+
 </body>
 
 </html>

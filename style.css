@@ -8,7 +8,7 @@
     src: url(fonts/OpenSans-VariableFont_wdth\,wght.ttf);
 }
 
-h1.heading {
+.heading {
     /* We Love the Sun as much as Earth! */
 
     position: relative;
@@ -29,7 +29,7 @@ h1.heading {
     color: #000000;
 }
 
-img.question {
+.question {
     /* question 1 */
 
     position: relative;
@@ -122,7 +122,7 @@ header {
 
 
 
-p.description {
+.description {
     /* Click the buttons to play with the sun. take it left or take it right
      but dont take it home cause sun is home-sick! */
 
@@ -146,7 +146,7 @@ p.description {
 
 
 
-button.leftbtn {
+.leftbtn {
     /* Group 1 */
 
     position: relative;
@@ -174,7 +174,7 @@ button.leftbtn {
 
 }
 
-button.rightbtn {
+.rightbtn {
     /* Group 2 */
 
     position: relative;
@@ -213,41 +213,41 @@ button.rightbtn {
     }
 }
 
-/* Animation Left start*/ 
+/* Animation Left start*/
 
 
-.aniLeft{
+.aniLeft {
     @keyframes moveLeft {
         0% {
             transform: rotate(0deg) translateY(-125px) rotate(0deg);
         }
-    
-    
-    
+
+
+
         100% {
             transform: rotate(-60deg) translateY(-105px) rotate(-90deg);
         }
-    
-    
+
+
     }
 }
 
 
 
-.aniLeftLight{
+.aniLeftLight {
     @keyframes moveLeftLight {
         0% {
             transform: rotate(0deg) translateX(-5px) translateY(-75px) rotate(-25deg);
         }
-    
-    
-    
+
+
+
         100% {
             transform: rotate(-50deg) translateX(-10px) translateY(-50px) rotate(-50deg);
         }
-    
+
     }
-    
+
 }
 
 
@@ -255,35 +255,35 @@ button.rightbtn {
 
 /* Animation Right start */
 
-.aniRight{
+.aniRight {
     @keyframes moveRight {
         0% {
             transform: rotate(0deg) translateY(-125px) rotate(0deg);
         }
-    
-    
-    
+
+
+
         100% {
             transform: rotate(60deg) translateY(-105px) rotate(90deg);
         }
-    
-    
+
+
     }
 }
 
 
-.aniRightLight{
+.aniRightLight {
     @keyframes moveRightLight {
         0% {
             transform: rotate(0deg) translateX(-5px) translateY(-75px) rotate(-25deg);
         }
-    
-    
-    
+
+
+
         100% {
             transform: rotate(15deg) translateX(20px) translateY(-50px) rotate(40deg);
         }
-    
+
     }
 }
 
