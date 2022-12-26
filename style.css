@@ -36,7 +36,7 @@
     width: 44px;
     height: 44px;
     right: 50px;
-    top: 37px;
+    top: 50px;
 
     float: right;
 
@@ -216,12 +216,21 @@ header {
 }
 
 @media screen and (max-width: 480px) {
-    .question {
-        display: none;
-    }
+
 
     .btn {
         max-width: min-content;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .question {
+        right: 20px;
+
+    }
+
+    .heading {
+        left: 20px;
     }
 }
 
