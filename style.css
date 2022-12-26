@@ -78,9 +78,7 @@ header {
     top: 132.5px;
     left: 107.5px;
     transform: translateX(0px) translateY(-125px);
-    animation: moveLeft 3s 1 linear;
 
-    animation: moveRight 3s 1 linear;
 
 
 }
@@ -95,9 +93,7 @@ header {
     left: 85px;
 
     transform: translateX(-5px) translateY(-75px) rotate(-25deg);
-    animation: moveLeftLight 3s 1 linear;
 
-    animation: moveRightLight 3s 1 linear;
 
 }
 
@@ -174,6 +170,22 @@ header {
 
 }
 
+.leftbtn:hover {
+    background-color: green;
+}
+
+.rightbtn:hover {
+    background-color: green;
+}
+
+.leftbtn:active {
+    transform: translateY(4px);
+}
+
+.rightbtn:active {
+    transform: translateY(4px);
+}
+
 .rightbtn {
     /* Group 2 */
 
@@ -217,36 +229,40 @@ header {
 
 
 .aniLeft {
-    @keyframes moveLeft {
-        0% {
-            transform: rotate(0deg) translateY(-125px) rotate(0deg);
-        }
+
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    /* top: 10px; */
+
+    /* left: 110px; */
+    /* left: 60px; */
+    top: 132.5px;
+    left: 107.5px;
+    transform: translateX(0px) translateY(-125px);
+    animation: moveLeft 3s 1 linear;
 
 
 
-        100% {
-            transform: rotate(-60deg) translateY(-105px) rotate(-90deg);
-        }
 
-
-    }
 }
 
 
 
 .aniLeftLight {
-    @keyframes moveLeftLight {
-        0% {
-            transform: rotate(0deg) translateX(-5px) translateY(-75px) rotate(-25deg);
-        }
+
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 110px;
+    left: 85px;
+
+    transform: translateX(-5px) translateY(-75px) rotate(-25deg);
+    animation: moveLeftLight 3s 1 linear;
 
 
 
-        100% {
-            transform: rotate(-50deg) translateX(-10px) translateY(-50px) rotate(-50deg);
-        }
 
-    }
 
 }
 
@@ -256,37 +272,101 @@ header {
 /* Animation Right start */
 
 .aniRight {
-    @keyframes moveRight {
-        0% {
-            transform: rotate(0deg) translateY(-125px) rotate(0deg);
-        }
 
 
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    /* top: 10px; */
 
-        100% {
-            transform: rotate(60deg) translateY(-105px) rotate(90deg);
-        }
+    /* left: 110px; */
+    /* left: 60px; */
+    top: 132.5px;
+    left: 107.5px;
+    transform: translateX(0px) translateY(-125px);
 
 
-    }
+    animation: moveRight 3s 1 linear;
+
+
 }
 
 
 .aniRightLight {
-    @keyframes moveRightLight {
-        0% {
-            transform: rotate(0deg) translateX(-5px) translateY(-75px) rotate(-25deg);
-        }
 
 
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 110px;
+    left: 85px;
 
-        100% {
-            transform: rotate(15deg) translateX(20px) translateY(-50px) rotate(40deg);
-        }
+    transform: translateX(-5px) translateY(-75px) rotate(-25deg);
 
-    }
+
+    animation: moveRightLight 3s 1 linear;
+
+
 }
 
 
 
 /* Animation Right end */
+
+
+@keyframes moveLeft {
+    0% {
+        transform: rotate(0deg) translateY(-125px) rotate(0deg);
+    }
+
+
+
+    100% {
+        transform: rotate(-60deg) translateY(-105px) rotate(-90deg);
+    }
+
+
+}
+
+
+@keyframes moveLeftLight {
+    0% {
+        transform: rotate(0deg) translateX(-5px) translateY(-75px) rotate(-25deg);
+    }
+
+
+
+    100% {
+        transform: rotate(-50deg) translateX(-10px) translateY(-50px) rotate(-50deg);
+    }
+
+}
+
+@keyframes moveRight {
+    0% {
+        transform: rotate(0deg) translateY(-125px) rotate(0deg);
+    }
+
+
+
+    100% {
+        transform: rotate(60deg) translateY(-105px) rotate(90deg);
+    }
+
+
+}
+
+
+
+@keyframes moveRightLight {
+    0% {
+        transform: rotate(0deg) translateX(-5px) translateY(-75px) rotate(-25deg);
+    }
+
+
+
+    100% {
+        transform: rotate(15deg) translateX(20px) translateY(-50px) rotate(40deg);
+    }
+
+}
